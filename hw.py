@@ -23,9 +23,9 @@ for Number  in range (1, 101):
 # Exercise 3
 # Take in a users input for their age, if they are younger than 18 print kids, if they're 18 to 65 print adults, else print seniors
 age = input('How old are you?')
-if age <18:
-    print("kids")
-if age >=18 and 65:
-    print ('adults'),
+if int(age)<18:
+    print ('kids')
+elif int(age)in range(18,65):
+    print ('adults')
 else:
     print('seniors')
